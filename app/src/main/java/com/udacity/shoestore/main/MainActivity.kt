@@ -1,6 +1,7 @@
 package com.udacity.shoestore.main
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.Navigation
@@ -27,10 +28,8 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupActionBarWithNavController(this, navController)
 
     }
-
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
-        return (Navigation.findNavController(this, R.id.nav_host_fragment).popBackStack()
-                || super.onSupportNavigateUp())
+        return super.onSupportNavigateUp()
     }
 }
