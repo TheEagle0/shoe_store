@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">User name</string>
+    <string name="enter_your_user_name">Enter your user name</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your password.</string>
+    <string name="login">Login</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="welcome">Welcome to our app</string>
+    <string name="choose_anything">Please feel free to view and choose anything you want without any regulations</string>
+    <string name="next">Next</string>
+    <string name="instructions">By clicking the next button you will be taken to the next screen in which you would be able to select,view and add new shoes</string>
+    <string name="note">Please Note</string>
+</resources>
