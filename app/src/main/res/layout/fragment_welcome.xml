@@ -7,12 +7,14 @@
             name="welcomeFragment"
             type="com.udacity.shoestore.welcome.WelcomeFragment" />
     </data>
+    <!-- USed Scroll view tp allow the user to view the views that are out of the screen   -->
 
     <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".welcome.WelcomeFragment">
+        <!--    Used because of it's ability of relating views to each other-->
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

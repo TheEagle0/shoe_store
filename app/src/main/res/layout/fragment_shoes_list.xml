@@ -7,25 +7,25 @@
             name="shoeListFragment"
             type="com.udacity.shoestore.shoes_list.ShoesListFragment" />
     </data>
+    <!--    Used because of it's ability of relating views to each other-->
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".shoes_list.ShoesListFragment">
+        <!-- USed Scroll view tp allow the user to view the views that are out of the screen   -->
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/shoesRV"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/addShoes"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+<!--          Used the linear layout to sort views vertically-->
+          <LinearLayout
+              android:id="@+id/shoesLinearLayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" />
+      </ScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/addShoes"
